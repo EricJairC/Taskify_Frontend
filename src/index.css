@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --colorPrimario: #7ab3ec;
+    --colorSecundario: #5e9cda;
+    --colorTerciario: #abc9e7;
+    --colorResaltado: #2173c5;
+}
+
+.button-login{
+    transition: all 0.15s ease-in-out;
+}
+
+.shadow-person{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 10px;
+}
+
+.container-button:hover{
+    background-color: var(--colorPrimario);
+}
+
+.container-button:hover .button-icon{
+    background-color: var(--colorSecundario);
+    
+}
+
+.container-button:hover .icon,
+.container-button:hover .text-button{
+    color: #fff;
+}
+
+.container-button:hover .icon,
+.container-button:hover .text-button,
+.container-button:hover .button-icon,
+.container-button:hover{
+    transition: all 0.2s ease-in-out;
+}
+
+.shadow-person{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.shadow-item{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.grid-team{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    
+}
