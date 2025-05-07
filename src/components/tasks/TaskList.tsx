@@ -92,7 +92,7 @@ export default function TaskList({tasks, canEdit} : TaskListProps) {
         <div className='flex gap-5 overflow-x-scroll lg:overflow-hidden pb-32'>
             <DndContext onDragEnd={handleDragEnd}>
                 {Object.entries(groupedTasks).map(([status, tasks]) => (
-                    <div key={status} className=' w-[20%] min-w-[180px] 2xl:min-w-0 2xl:w-1/5'>
+                    <div key={status} className=' w-[20%] min-w-[220px] 2xl:min-w-0 2xl:w-1/5'>
                         <h3 className={`capitalize text-lg font-normal border-slate-300 border bg-white px-2 py-1 border-t-8 rounded-md ${statusStyles[status]}`}>{statusTranslations[status]}</h3>
                         <DropTask status={status}/>
                         <ul className='mt-5 space-y-5'>
