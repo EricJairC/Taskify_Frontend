@@ -6,7 +6,7 @@ import { useMutation } from '@tanstack/react-query'
 import { RequestConfirmationCode } from "@/api/AuthAPI";
 import { toast } from "react-toastify";
 
-export default function RegisterView() {
+export default function RequestNewCodeView() {
     const initialValues: RequestConfirmationCodeForm = {
         email: ''
     }

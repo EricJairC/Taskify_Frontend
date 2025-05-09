@@ -75,33 +75,33 @@ export default function DeleteProjectModal() {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <Dialog.Panel className="w-full max-w-4xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all p-16">
+                            <Dialog.Panel className="w-full max-w-4xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all p-6">
 
                                 <Dialog.Title
                                     as="h3"
-                                    className="font-black text-4xl  my-5"
+                                    className="text-2xl text-colorPrimario font-bold mb-2"
                                 >Eliminar Proyecto </Dialog.Title>
 
-                                <p className="text-xl font-bold">Confirma la eliminación del proyecto {''}
-                                    <span className="text-fuchsia-600">colocando tu password</span>
+                                <p className="text-lg font-normal text-gray-800">Confirma la eliminación del proyecto {''}
+                                    <span className="text-colorPrimario font-semibold">colocando tu password</span>
                                 </p>
 
                                 <form
-                                    className="mt-10 space-y-5"
+                                    className=" mt-5 space-y-4"
                                     onSubmit={handleSubmit(handleForm)}
                                     noValidate
                                 >
 
-                                    <div className="flex flex-col gap-3">
+                                    <div className="flex flex-col gap-2">
                                         <label
-                                            className="font-normal text-2xl"
+                                            className="text-base font-semibold"
                                             htmlFor="password"
                                         >Password</label>
                                         <input
                                             id="password"
                                             type="password"
                                             placeholder="Password Inicio de Sesión"
-                                            className="w-full p-3  border-gray-300 border"
+                                            className="w-full p-2 text-base border border-gray-300 rounded-md"
                                             {...register("password", {
                                                 required: "El password es obligatorio",
                                             })}
@@ -113,7 +113,7 @@ export default function DeleteProjectModal() {
 
                                     <input
                                         type="submit"
-                                        className=" bg-fuchsia-600 hover:bg-fuchsia-700 w-full p-3  text-white font-black  text-xl cursor-pointer"
+                                        className=" bg-colorPrimario hover:bg-colorSecundario w-full py-1 px-4 text-white font-semibold cursor-pointer transition-colors rounded text-center"
                                         value='Eliminar Proyecto'
                                     />
                                 </form>
