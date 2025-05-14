@@ -17,8 +17,8 @@ export default function DashboardView() {
     const { data: user, isLoading: authLoading } = useAuth()
 
     const { data, isLoading } = useQuery({
-        queryKey: ['projects'],  // Tiene que ser único
-        queryFn: getProjects,     // Ejecuta getProjects
+        queryKey: ['projects'], 
+        queryFn: getProjects,
     })
 
     if (isLoading && authLoading) return 'Cargando'
